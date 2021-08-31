@@ -1,19 +1,22 @@
 import './App.css';
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Main from '../Main/Main'
+import Main from '../Main/Main';
+import Header from '../Header/Header';
+import Movies from '../Movies/Movies';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <Route exact path="/">
         <Main />
       </Route>
-      {/* <Route path="/movies">
+      <Route path="/movies">
         <Movies />
       </Route>
-      <Route path="/saved-movies">
+      {/* <Route path="/saved-movies">
         <SavedMovies />
       </Route>
       <Route path="/profile">
