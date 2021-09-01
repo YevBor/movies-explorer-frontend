@@ -1,21 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
-// import MoreButton from '../MoreButton/MoreButton';
 
-import INIT_CARDS from '../../utils/initCards';
-
-function MoviesCardList() {
+function MoviesCardList({data, isSavedMovies}) {
 
   return (
     <section className="movies-card-list__section">
       <ul className="movies-card__list">
-        {INIT_CARDS.map((movie) => (
+        {data.map((movie) => (
           <li key={movie.id || movie._id}>
             <MoviesCard
               movie={movie}
               buttonTitle="Сохранить"
+              isSavedMovies={isSavedMovies}
             />
           </li>
         ))}

@@ -10,11 +10,6 @@
 
 .header__logo {
   display: block;
-  transition: transform ease 1s;
-}
-
-.header__logo:hover{
-  transform: rotate(360deg);
 }
 
 .header__grid-template {
@@ -46,10 +41,10 @@
   opacity: .7;
 }
 
-.header__auth-navlink_bgcolor_black {
+.header__auth-navlink_bgcolor_green {
   border-radius: 3px;
   color: #FFF;
-  background: #000;
+  background: #2BE080;
 }
 
 .header__menu-btn {

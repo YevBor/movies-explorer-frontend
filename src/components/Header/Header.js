@@ -13,7 +13,7 @@ function Header({ loggedIn, onMenu }) {
       </Link>
       {loggedIn ? (<Navigation />) : (<nav className="header__auth-navlink-container">
         <NavLink className="header__auth-navlink" to="/signup">Регистрация</NavLink>
-        <NavLink className="header__auth-navlink header__auth-navlink_bgcolor_black" to="/signin">Войти</NavLink>
+        <NavLink className="header__auth-navlink header__auth-navlink_bgcolor_green" to="/signin">Войти</NavLink>
       </nav>)}
       {loggedIn &&
         (

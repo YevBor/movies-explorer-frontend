@@ -4,10 +4,10 @@ import accountLink from '../../images/account-link.svg';
 import './ProfileEditButton.css';
 
 
-function ProfileEditButton({ onClick }) {
+function ProfileEditButton() {
 
   return (
-    <img alt="account-icon" className="profile__account-link" src={accountLink} onClick={onClick} />
+    <img alt="account-icon" className="profile__account-link" src={accountLink} />
   )
 }
 
