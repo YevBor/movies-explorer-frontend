@@ -18,10 +18,10 @@ function AboutMe() {
 и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
             <ul className="about-me__list">
               <li className="about-me__list-item">
-                <a className="about-me__list-link" href="https://www.facebook.com/zura.bobokhidze.3" target="_blank" rel="noreferrer">Facebook</a>
+                <a className="about-me__list-link" href="https://www.facebook.com/eugene.selukov/" target="_blank" rel="noreferrer">Facebook</a>
               </li>
               <li className="about-me__list-item">
-                <a className="about-me__list-link" href="https://github.com/zurabobo" target="_blank" rel="noreferrer">Github</a>
+                <a className="about-me__list-link" href="https://github.com/YevBor" target="_blank" rel="noreferrer">Github</a>
               </li>
             </ul>
           </div>
@@ -33,15 +33,15 @@ function AboutMe() {
           <h5 className="about-me__portfolio-title">Портфолио</h5>
           <ul className="about-me__portfolio-list">
             <li className="about-me__portfolio-list-item">
-              <a className="about-me__portfolio-list-link" href="https://github.com/zurabobo/how-to-learn" target="_blank" rel="noreferrer">Статичный сайт
+              <a className="about-me__portfolio-list-link" href="https://yevbor.github.io/russian-travel/" target="_blank" rel="noreferrer">Статичный сайт
                 <span className="about-me__portfolio-list-link-icon">↗</span>
               </a>
             </li>
             <li className="about-me__portfolio-list-item">
-              <a className="about-me__portfolio-list-link" href="https://zurabobo.github.io/russian-travel" target="_blank" rel="noreferrer">Адаптивный сайт
+              <a className="about-me__portfolio-list-link" href="https://yevbor.github.io/russian-travel/" target="_blank" rel="noreferrer">Адаптивный сайт
                 <span className="about-me__portfolio-list-link-icon">↗</span>
               </a></li><li className="about-me__portfolio-list-item">
-              <a className="about-me__portfolio-list-link" href="https://zb.students.nomoredomains.club" target="_blank" rel="noreferrer">Одностраничное приложение
+              <a className="about-me__portfolio-list-link" href="https://yevbor.github.io/russian-travel/" target="_blank" rel="noreferrer">Одностраничное приложение
                 <span className="about-me__portfolio-list-link-icon">↗</span>
               </a>
             </li>
