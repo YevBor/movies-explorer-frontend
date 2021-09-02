@@ -1,5 +1,6 @@
 .navigation__container {
   display: flex;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
@@ -9,13 +10,14 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.38px;
   text-align: right;
   color: #000;
   margin: 0;
   opacity: 1;
   transition: opacity .3s ease;
+  padding-right: 5px;
 }
 
 .navigation__link:last-of-type {
@@ -28,7 +30,6 @@
 
 .navigation__link_active {
   font-weight: 500;
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 1023px) {
