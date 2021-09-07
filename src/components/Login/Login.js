@@ -9,7 +9,7 @@ function Login() {
       <AuthForm
         titleText={'Рады видеть!'}
         requestLink={
-          <p className="auth-form__request-text">Ещё не зарегистрированы? <Link to="/signup" className="auth-form__link">Регистрация</Link></p>
+          <p className="auth-form__request-text">Ещё не зарегистрированы? <Link to="/sign-up" className="auth-form__link">Регистрация</Link></p>
         }
         buttonTitle="Войти"
       >

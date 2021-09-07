@@ -21,7 +21,7 @@ function AboutProject() {
       <section className="about-project__chart-section">
         <div className="about-project__chart">
           <div className="about-project__chart-item">
-            <p className="about-project__chart-text about-project__chart-text_bgcolor_black">1 неделя</p>
+            <p className="about-project__chart-text about-project__chart-text_bgcolor-green">1 неделя</p>
             <p className="about-project__chart-subtext">Back-end</p>
           </div>
           <div className="about-project__chart-item">

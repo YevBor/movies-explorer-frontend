@@ -61,9 +61,9 @@
   margin: 0;
 }
 
-.about-project__chart-text_bgcolor_black {
-  background: #000;
-  color: #FFF;
+.about-project__chart-text_bgcolor-green {
+  background: #2BE080;
+  color: #000000;
 }
 
 .about-project__chart-subtext {

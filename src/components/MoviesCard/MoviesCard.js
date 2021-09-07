@@ -1,27 +1,41 @@
-import React from 'react';
+import { React, useState } from 'react';
 
 import './MoviesCard.css'
+import CardImage from '../../images/card.jpeg'
 
-function MoviesCard({ movie, buttonTitle, isSavedMovies}) {
+function MoviesCard({ data, locationPathname, buttonTitle }) {
 
-  const movieLikeBtnClassName = `${movie.likes ? "movies-card__save-btn movies-card__saved-btn" : "movies-card__save-btn"}`;
+  const [isSaved, setIsSaved] = useState(data.isSaved);
+
+
+  const DeleteSavedMovieIconClassName = `${locationPathname === '/saved-movies' ? (
+    "card__save-button card__save-button_delete"
+  )
+  :
+  locationPathname === '/movies' && isSaved ? (
+    "movies-card__save-button_active"
+  ) : (
+    "movies-card__save-button"
+  )}`
+
+
+
+
+  const handleSaveClick = () => {
+    setIsSaved(!isSaved);
+  };
 
   return (
 
-    <article className="movies-card">
-      <a href={movie.trailer} target="_blank" rel="noopener noreferrer nofollow" >
-        <img className="movies-card__image" src={movie.src}
-          alt={movie.nameRU} />
-      </a>
-      {isSavedMovies ? (
-        <button className="movies-card__save-btn movies-card__delete-btn"></button>
-      ) : (
-        <button className={movieLikeBtnClassName}>{buttonTitle}</button>
-      )} 
-      <div className="movies-card__description">
-        <h2 className="movies-card__title">{movie.nameRU}</h2>
-        <p className="movies-card__duration">{movie.duration}</p>
-      </div>
+    <article id={data.id} className="movies-card">
+      <img className="movies-card__image" src={CardImage} alt="постер" />
+        <div className='movies-card__title-section'>
+          <div className='movies-card__text-section'>
+            <h2 className="movies-card__title">33 слова о дизайне</h2>
+            <p className="movies-card__duration">1ч 17м</p>
+          </div>
+          <button className={DeleteSavedMovieIconClassName} onClick={handleSaveClick}>{buttonTitle}</button>
+        </div>
     </article>
   )
 }

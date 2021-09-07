@@ -12,10 +12,14 @@ function AboutMe() {
       <section className="about-me__section">
         <article className="about-me__info-container">
           <div className="about-me__text-container">
+            <h3 className="about-me__info-title">Зураб</h3>
             <h3 className="about-me__info-title">Евгений</h3>
             <h4 className="about-me__subtitle">Фронтенд-волшебник, 32 года</h4>
-            <p className="about-me__text">Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена 
-и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
+            <p className="about-me__text">Я родился и живу в Саратове, закончил факультет экономики СГУ.
+             У меня есть женаи дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом.
+             Недавно начал кодить. С 2015 года работал в компании «СКБ Контур».
+             После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
+
             <ul className="about-me__list">
               <li className="about-me__list-item">
                 <a className="about-me__list-link" href="https://www.facebook.com/eugene.selukov/" target="_blank" rel="noreferrer">Facebook</a>
@@ -33,7 +37,7 @@ function AboutMe() {
           <h5 className="about-me__portfolio-title">Портфолио</h5>
           <ul className="about-me__portfolio-list">
             <li className="about-me__portfolio-list-item">
-              <a className="about-me__portfolio-list-link" href="https://yevbor.github.io/russian-travel/" target="_blank" rel="noreferrer">Статичный сайт
+            <a className="about-me__portfolio-list-link" href="https://yevbor.github.io/russian-travel/" target="_blank" rel="noreferrer">Статичный сайт
                 <span className="about-me__portfolio-list-link-icon">↗</span>
               </a>
             </li>

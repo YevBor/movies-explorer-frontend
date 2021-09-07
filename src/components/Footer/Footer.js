@@ -17,7 +17,7 @@ function Footer() {
             <li className="footer__list-item">
               <a className="footer__list-link" href="https://www.facebook.com/eugene.selukov/" target="_blank" rel="noreferrer">Facebook</a>
             </li>
-          </ul>
+         </ul>
         </div>
     </footer>
   )

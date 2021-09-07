@@ -3,25 +3,21 @@ import React from 'react';
 import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
 
-function MoviesCardList({data, isSavedMovies}) {
+
+function MoviesCardList({ locationPathname, data }) {
+
+  const initialMoviesCards = data.map((item) => (
+    <li key={item.id}>
+      <MoviesCard
+        data={item}
+        locationPathname={locationPathname}
+      />
+    </li>
+  ))
 
   return (
-    <section className="movies-card-list__section">
-      <ul className="movies-card__list">
-        {data.map((movie) => (
-          <li key={movie.id || movie._id}>
-            <MoviesCard
-              movie={movie}
-              buttonTitle="Сохранить"
-              isSavedMovies={isSavedMovies}
-            />
-          </li>
-        ))}
-      </ul>
-    </section>
+    <ul className="movies-card__list">{initialMoviesCards}</ul>
   )
 }
 
 export default MoviesCardList;
-
-

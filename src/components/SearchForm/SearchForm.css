@@ -13,28 +13,22 @@
 
 .search-form__input {
   width: calc(100% - 102px);
-  height: 44px;
+  height: 48px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.29;
-  /* background: #F9F9F9; */
+  color: #A0A0A0;
+  background: #F9F9F9;
   border-radius: 4px;
-  border: solid 1px #EBEBEB;
+  border: none;
   text-align: left;
   padding: 0 0 0 22px;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .search-form__input:focus {
   outline: none;
-  background-color: #FFF;
-  border: solid 1px #000;
-  border-radius: 4px;
 }
 
 .search-form__input-container {
@@ -54,10 +48,10 @@
   color: #FFF;
   width: 70px;
   height: 44px;
-  background: #000;
+  background: #FF6838;
   border: none;
   padding: 0;
-  border-radius: 3px;
+  border-radius: 40px;
   cursor: pointer;
 }
 

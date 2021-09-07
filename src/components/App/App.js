@@ -1,20 +1,19 @@
-import './App.css';
 import { React, useState } from 'react';
-import { Route, Switch, useRouteMatch } from 'react-router-dom';
-import Main from '../Main/Main';
-import MenuPopup from '../MenuPopup/MenuPopup';
+import { Route, Switch, useRouteMatch } from "react-router-dom";
 
-import Header from '../Header/Header';
+import Header from '../Header/Header'
+import MenuPopup from '../MenuPopup/MenuPopup';
+import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
-import Footer from '../Footer/Footer';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
-import Login from '../Login/Login';
 import Register from '../Register/Register';
+import Footer from '../Footer/Footer';
+import Login from '../Login/Login';
 import NoPageFound from '../NoPageFound/NoPageFound';
 
-
 function App() {
+
   const [loggedIn, setLoggedIn] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -36,18 +35,20 @@ function App() {
     setMenuIsOpen(false);
   };
 
-  const excludeHeaderForRoutes = ['/signin', '/signup'];
+  const excludeHeaderForRoutes = [
+    '/sign-in',
+    '/sign-up',
+  ];
 
   const excludeFooterForRoutes = [
-    '/signin',
-    '/signup',
+    '/sign-in',
+    '/sign-up',
     '/profile',
   ];
 
   return (
-    <div className="App">
-      
-    {useRouteMatch(excludeHeaderForRoutes) ? null : (
+    <>
+      {useRouteMatch(excludeHeaderForRoutes) ? null : (
         <Header
           loggedIn={loggedIn}
           onSignup={handleSignup}
@@ -56,43 +57,43 @@ function App() {
         />
       )}
 
-<Switch>
-      <Route exact path="/">
-        <Main />
-      </Route>
+      <Switch>
 
-      <Route path="/movies">
-          <Movies buttonTitle="Сохранить" setLoggedIn={setLoggedIn}/>
+        <Route exact path="/">
+          <Main />
+        </Route>
+
+        <Route path="/movies">
+          <Movies buttonTitle="Сохранить" />
         </Route>
 
         <Route path="/saved-movies">
-        <SavedMovies setLoggedIn={setLoggedIn} />
-      </Route>
+          <SavedMovies />
+        </Route>
 
-      <Route path="/profile">
-        <Profile />
-      </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
 
-      <Route path="/signin">
-        <Login />
-      </Route>
-      <Route path="/signup">
-        <Register />        
-      </Route>
+        <Route path="/sign-up" >
+          <Register />
+        </Route>
 
-      <Route>
+        <Route path="/sign-in">
+          <Login />
+        </Route>
+
+        <Route>
           <NoPageFound />
         </Route>
 
-</Switch>
-
-{useRouteMatch(excludeFooterForRoutes) ? null : (
+      </Switch>
+      {useRouteMatch(excludeFooterForRoutes) ? null : (
         <Footer />
       )}
       {menuIsOpen && (<MenuPopup isOpen={menuIsOpen} onClose={handleCloseMenu} />)}
 
-
-    </div>
+    </>
   );
 }
 
