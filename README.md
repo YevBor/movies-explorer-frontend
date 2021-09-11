@@ -1,8 +1,8 @@
 # movies-explorer-frontend
 
-`Movie Explorer` сервис для поиска фильмов
+ Cервис для поиска фильмов
 
-* публичный IP-адрес сервера: 178.154.241.36
-* домен сервера: https://api.movies-explorer.zb.nomoredomains.rocks
-* Адрес размещения фронтенда на сервере: https://movies-explorer.zb.nomoredomains.rocks
-* Ссылка на макет: https://github.com/zurabobo/movies-explorer-frontend/pull/1
+* публичный IP-адрес сервера: 178.154.228.145
+* домен сервера: https://api.movie-search.nomoredomains.club/
+* Адрес размещения фронтенда на сервере: https://movie-search.nomoredomains.club/
+
