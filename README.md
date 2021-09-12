@@ -4,5 +4,5 @@
 
 * публичный IP-адрес сервера: 178.154.228.145
 * домен сервера: https://api.movie-search.nomoredomains.club/
-* Адрес размещения фронтенда на сервере: https://movie-search.nomoredomains.club/
+
 
