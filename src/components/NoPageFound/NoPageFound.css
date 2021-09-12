@@ -37,6 +37,8 @@
 }
 
 .page-not-found__go-back-link {
+  background: none;
+  border-style: none;
   text-decoration: none;
   font-family: Inter;
   font-style: normal;
@@ -44,7 +46,7 @@
   font-size: 14px;
   line-height: 1.21;
   text-align: center;
-  color: #000;
+  color: #FF6838;
   transition: opacity .3s ease;
 }
 
