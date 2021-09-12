@@ -71,7 +71,6 @@ function MoviesCardList({ isLoading, foundUserMovies, isSavedMoviesSearch, saved
   const initialMoviesCards = moviesToRender.map((movie) => (
     <li key={movie.id || movie._id}>
       <MoviesCard
-        buttonTitle="Сохранить"
         movie={movie}
         onSaveMovie={onSaveMovie}
         likedMovies={likedMovies}

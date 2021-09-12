@@ -14,8 +14,8 @@ function MoviesCard({
 }) {
 
   const isLiked = !isSavedMovies && likedMovies(movie)
-  const movieLikeBtnClassName = `${isLiked ? "movies-card__save-btn movies-card__saved-btn" : "movies-card__save-btn"}`;
-
+  const movieLikeBtnClassName = `${isLiked ? "movies-card__save-button_active" : "movies-card__save-button"}`;
+  
   const handleSaveMovieClick = () => {
     onSaveMovie({
       country: movie.country || 'Нет данных',
@@ -38,21 +38,22 @@ function MoviesCard({
   }
 
   return (
-
     <article className="movies-card">
-      <a href={movie.trailerLink || movie.trailer} target="_blank" rel="noopener noreferrer nofollow" >
-        <img className="movies-card__image" src={isSavedMovies ? movie.image : `${IMAGE_URL}${movie.image ? movie.image.url : movie.image}`}
+      <img className="movies-card__image" src={isSavedMovies ? movie.image : `${IMAGE_URL}${movie.image ? movie.image.url : movie.image}`}
           alt={movie.nameRU || movie.nameEN} />
-      </a>
-      {isSavedMovies ? (
-        <button className="movies-card__save-btn movies-card__delete-btn" onClick={handleDeleteClick}></button>
-      ) : (
-        <button className={movieLikeBtnClassName} onClick={handleSaveMovieClick}>{buttonTitle}</button>
-      )}
-      <div className="movies-card__description">
-        <h2 className="movies-card__title">{movie.nameRU || movie.nameEN}</h2>
-        <p className="movies-card__duration">{convertTime(movie.duration)}</p>
-      </div>
+        <div className='movies-card__title-section'>
+          <div className='movies-card__text-section'>
+            <h2 className="movies-card__title">{movie.nameRU || movie.nameEN}</h2>
+            <p className="movies-card__duration">{convertTime(movie.duration)}</p>
+          </div>
+          {/* <button className={DeleteSavedMovieIconClassName} onClick={handleSaveClick}>{buttonTitle}</button> */}
+          {isSavedMovies ? (
+            <button className="movies-card__save-button movies-card__save-button_delete" onClick={handleDeleteClick}></button>
+           ) : (
+           <button className={movieLikeBtnClassName} onClick={handleSaveMovieClick}>{buttonTitle}</button>
+          )}
+          
+        </div>
     </article>
   )
 }
