@@ -9,7 +9,7 @@ import Preloader from '../Preloader/Preloader';
 function Profile({ onSignOut, profileUpdateMessage, isLoading, onUpdateUser, userResStatus }) {
   const currentUser = useContext(CurrentUserContext);
   const [isUpdateUserError, setIsUpdateUserError] = useState(false);
-  const [updateUserErrorMessage, setUpdateUserErrorMessage] = useState('')
+  const [ setUpdateUserErrorMessage] = useState('')
   const [formIsValid, setFormIsValid] = useState(false);
   const [isEdited, setIsEdited] = React.useState(false);
 
