@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch, useRouteMatch, useHistory } from "react-router-dom";
 import './App.css';
+import {SHORTMOVIES_DURATION} from '../../utils/config';
 
 
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
@@ -216,7 +217,7 @@ console.log(movies);
   const filterShortMovies = (arr) => {
     if (arr.length !== 0 || arr !== "undefind") {
       return arr.filter((movie) =>
-        shortMovies ? movie.duration <= 40 : true
+        shortMovies ? movie.duration <= SHORTMOVIES_DURATION : true
       );
     }
   }

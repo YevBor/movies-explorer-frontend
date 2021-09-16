@@ -1,6 +1,6 @@
-// export const MAIN_API_URL = 'https://api.movie-search.nomoredomains.club';
+export const MAIN_API_URL = 'https://api.movie-search.nomoredomains.club';
 
-export const MAIN_API_URL = 'http://localhost:3001';
+// export const MAIN_API_URL = 'http://localhost:3001';
 export const MOVIES_API_URL = 'https://api.nomoreparties.co/beatfilm-movies';
 export const IMAGE_URL = 'https://api.nomoreparties.co';
 
@@ -16,3 +16,5 @@ export const QUANTITY_MOVIES_TO_ADD_L = 3;
 export const QUANTITY_MOVIES_TO_ADD_M = 2;
 
 export const QUANTIITY = 0;
+
+export const SHORTMOVIES_DURATION = 40;

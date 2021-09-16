@@ -12,6 +12,7 @@ function Movies({ savedMovies, onChange, onGetMovies, likedMovies, isShortMovie,
 
   let location = useLocation();
 
+
   return (
     <>
       <SearchForm locationPathname={location.pathname} onGetMovies={onGetMovies} onSubmit={onSubmit} onChange={onChange} />
