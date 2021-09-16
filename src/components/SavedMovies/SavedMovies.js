@@ -15,9 +15,9 @@ function SavedMovies({ onChange, isSavedMoviesSearch, showSearchedMovies, handle
     handleSearchSavedMovies(data)
   }
 
-  useEffect(() => {
-    handleSearchSavedMovies()
-  }, [])
+  // useEffect(() => {
+  //   handleSearchSavedMovies()
+  // }, [])
 
   return (
     <>

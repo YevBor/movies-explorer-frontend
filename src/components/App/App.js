@@ -238,10 +238,10 @@ console.log(movies);
         mainApi.getSavedMovies(token),
       ])
         .then(([userData, allMovies, savedMovies]) => {
-          localStorage.setItem("currentUser", JSON.stringify(userData));
-          setCurrentUser(userData);
+          localStorage.setItem("currentUser", JSON.stringify(userData.user));
+          setCurrentUser(userData.user);
 
-          const savedMoviesList = savedMovies.filter((item) => item.owner === userData._id).reverse();
+          const savedMoviesList = savedMovies.filter((item) => item.owner === userData.user._id).reverse();
           localStorage.setItem("userMovies", JSON.stringify(savedMoviesList));
           setUserMovies(savedMoviesList);
 

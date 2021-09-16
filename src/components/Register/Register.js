@@ -51,7 +51,7 @@ function Register({ onRegister, loggedIn, isLoadingRegister, regResStatus }) {
 
   useEffect(() => {
     if (loggedIn) {
-      history.push("/");
+      history.push("/movies");
     }
   }, [history, loggedIn]);
 

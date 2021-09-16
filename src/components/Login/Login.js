@@ -78,7 +78,7 @@ function Login({ onLogin, loggedIn, isLoadingLogin, authResStatus, tokenResStatu
 
   useEffect(() => {
     if (loggedIn) {
-      history.push("/");
+      history.push("/movies");
     }
   }, [history, loggedIn]);
 
