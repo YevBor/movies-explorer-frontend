@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "npm run build && scp -r ./build/* hlom@62.84.112.76:/home/hlom/diplom/frontend",
     "build": "react-scripts build"
   },
   "eslintConfig": {
