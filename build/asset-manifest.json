@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b91d0e74.chunk.css",
+    "main.js": "/static/js/main.ae2fa46f.chunk.js",
+    "main.js.map": "/static/js/main.ae2fa46f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.aae80266.js",
+    "runtime-main.js.map": "/static/js/runtime-main.aae80266.js.map",
+    "static/js/2.f052e14b.chunk.js": "/static/js/2.f052e14b.chunk.js",
+    "static/js/2.f052e14b.chunk.js.map": "/static/js/2.f052e14b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b91d0e74.chunk.css.map": "/static/css/main.b91d0e74.chunk.css.map",
+    "static/js/2.f052e14b.chunk.js.LICENSE.txt": "/static/js/2.f052e14b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/SuisseIntl-Regular.c7060fcd.woff2",
+    "static/media/account-link.4a3397f0.svg": "/static/media/account-link.4a3397f0.svg",
+    "static/media/MenuPopup.css": "/static/media/close-btn-icon.80dfd5bd.svg",
+    "static/media/MoviesCard.css": "/static/media/saved-button.e78b4556.svg",
+    "static/media/header-logo.98ed3a2f.svg": "/static/media/header-logo.98ed3a2f.svg",
+    "static/media/Header.css": "/static/media/header-menu-button.08035af1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aae80266.js",
+    "static/js/2.f052e14b.chunk.js",
+    "static/css/main.b91d0e74.chunk.css",
+    "static/js/main.ae2fa46f.chunk.js"
+  ]
+}
