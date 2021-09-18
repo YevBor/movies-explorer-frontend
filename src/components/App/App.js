@@ -113,10 +113,13 @@ function App() {
 
   const handleUpdateUser = (data) => {
     const token = localStorage.getItem('jwt');
+    console.log(data);
+   
     if (token) {
       setIsLoadingUpdateUser(true)
       mainApi.updateUserProfile(data, token)
         .then((res) => {
+          console.log(res);
           setCurrentUser(res);
           setProfileUpdateMessage('Данные успешно обновлены')
           setUpdateUserResStatus(res.status);

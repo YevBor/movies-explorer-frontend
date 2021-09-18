@@ -50,6 +50,8 @@ class MainApi {
   }
 
   updateUserProfile(data, token) {
+    console.log(token);
+    console.log(data);
     return fetch(`${this._MAIN_API_URL}/users/me`, {
       method: 'PATCH',
       headers: {

@@ -9,7 +9,7 @@ import Preloader from '../Preloader/Preloader';
 function Profile({ onSignOut, profileUpdateMessage, isLoading, onUpdateUser, userResStatus }) {
   const currentUser = useContext(CurrentUserContext);
   const [isUpdateUserError, setIsUpdateUserError] = useState(false);
-  const [ setUpdateUserErrorMessage] = useState('')
+  const [updateUserErrorMessage, setUpdateUserErrorMessage] = useState('')
   const [formIsValid, setFormIsValid] = useState(false);
   const [isEdited, setIsEdited] = React.useState(false);
 
@@ -37,7 +37,14 @@ function Profile({ onSignOut, profileUpdateMessage, isLoading, onUpdateUser, use
   const errorHandler = () => {
     if (userResStatus) {
       switch (userResStatus) {
+        case 200:
+          setIsUpdateUserError(false);
+          setUpdateUserErrorMessage('');
+          break;
         case 400:
+          setIsUpdateUserError(true);
+          setUpdateUserErrorMessage('При обновлении профиля произошла ошибка');
+          break;
         case 404:
           setIsUpdateUserError(true);
           setUpdateUserErrorMessage('При обновлении профиля произошла ошибка');
@@ -45,10 +52,6 @@ function Profile({ onSignOut, profileUpdateMessage, isLoading, onUpdateUser, use
         case 500:
           setIsUpdateUserError(true);
           setUpdateUserErrorMessage('На сервере произошла ошибка')
-          break;
-        case 200:
-          setIsUpdateUserError(false);
-          setUpdateUserErrorMessage('');
           break;
         default:
           setIsUpdateUserError(true);
